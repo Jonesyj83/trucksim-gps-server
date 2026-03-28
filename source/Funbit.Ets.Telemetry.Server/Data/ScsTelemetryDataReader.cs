@@ -152,6 +152,12 @@ namespace Funbit.Ets.Telemetry.Server.Data
                 LightsBrakeOn = lights?.Brake ?? false,
                 LightsReverseOn = lights?.Reverse ?? false,
 
+                WearEngine = curr?.DamageValues?.Engine ?? 0f,
+                WearTransmission = curr?.DamageValues?.Transmission ?? 0f,
+                WearCabin = curr?.DamageValues?.Cabin ?? 0f,
+                WearChassis = curr?.DamageValues?.Chassis ?? 0f,
+                WearWheels = curr?.DamageValues?.WheelsAvg ?? 0f,
+
                 Placement = new PlacementV1
                 {
                     X = (float)(curr?.PositionValue?.Position?.X ?? 0),

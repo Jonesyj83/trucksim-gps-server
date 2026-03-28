@@ -108,6 +108,12 @@ namespace Funbit.Ets.Telemetry.Server.Data
         public bool LightsBrakeOn { get; set; }
         public bool LightsReverseOn { get; set; }
 
+        public float WearEngine { get; set; }
+        public float WearTransmission { get; set; }
+        public float WearCabin { get; set; }
+        public float WearChassis { get; set; }
+        public float WearWheels { get; set; }
+
         public PlacementV1 Placement { get; set; }
         public Vector3V1 Acceleration { get; set; }
         public Vector3V1 Head { get; set; }
